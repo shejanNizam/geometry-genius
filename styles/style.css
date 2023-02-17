@@ -1,0 +1,21 @@
+.header {
+  background-color: #82aec7;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.heading {
+  margin-left: 10px;
+}
+.btn {
+  width: 120px;
+  height: 48px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.all-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
