@@ -39,10 +39,26 @@
                 <h5 class="card-title text-center">Triangle</h5>
                 <p class="card-text text-center">Area (A) = 0.5 * b * h</p>
                 <p class="card-text text-center">
-                  <input class="w-25" type="text" placeholder="b" /> cm
-                  <input class="w-25" type="text" placeholder="h" /> cm
+                  <input
+                    id="triangle-base"
+                    class="w-25"
+                    type="text"
+                    placeholder="b"
+                  />
+                  cm
+                  <input
+                    id="triangle-height"
+                    class="w-25"
+                    type="text"
+                    placeholder="h"
+                  />
+                  cm
                 </p>
-                <button type="button" class="btn btn-primary w-100">
+                <button
+                  id="btn-triangle"
+                  type="button"
+                  class="btn btn-primary w-100"
+                >
                   Calculate
                 </button>
               </div>
@@ -59,10 +75,26 @@
                 <h5 class="card-title text-center">Rectangle</h5>
                 <p class="card-text text-center">Area (A) = w * l</p>
                 <p class="card-text text-center">
-                  <input class="w-25" type="text" placeholder="w" /> cm
-                  <input class="w-25" type="text" placeholder="l" /> cm
+                  <input
+                    id="rectangle-base"
+                    class="w-25"
+                    type="text"
+                    placeholder="w"
+                  />
+                  cm
+                  <input
+                    id="rectangle-height"
+                    class="w-25"
+                    type="text"
+                    placeholder="l"
+                  />
+                  cm
                 </p>
-                <button type="button" class="btn btn-primary w-100">
+                <button
+                  id="btn-rectangle"
+                  type="button"
+                  class="btn btn-primary w-100"
+                >
                   Calculate
                 </button>
               </div>
@@ -78,8 +110,27 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Parallelogram</h5>
                 <p class="card-text text-center">Area (A) = b * h</p>
-                <p class="card-text text-center">b=10cm, h=12cm</p>
-                <button type="button" class="btn btn-primary w-100">
+                <p class="card-text text-center">
+                  <input
+                    id="parallelogram-base"
+                    class="w-25"
+                    type="text"
+                    placeholder="b"
+                  />
+                  cm
+                  <input
+                    id="parallelogram-height"
+                    class="w-25"
+                    type="text"
+                    placeholder="h"
+                  />
+                  cm
+                </p>
+                <button
+                  id="btn-parallelogram"
+                  type="button"
+                  class="btn btn-primary w-100"
+                >
                   Calculate
                 </button>
               </div>
@@ -95,8 +146,27 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Rhombus</h5>
                 <p class="card-text text-center">Area (A) =0.5 * d1 * d2</p>
-                <p class="card-text text-center">d1 = 16cm, d2 = 8cm</p>
-                <button type="button" class="btn btn-primary w-100">
+                <p class="card-text text-center">
+                  <input
+                    id="rhombus-base"
+                    class="w-25"
+                    type="text"
+                    placeholder="d1"
+                  />
+                  cm
+                  <input
+                    id="rhombus-height"
+                    class="w-25"
+                    type="text"
+                    placeholder="d2"
+                  />
+                  cm
+                </p>
+                <button
+                  id="btn-rhombus"
+                  type="button"
+                  class="btn btn-primary w-100"
+                >
                   Calculate
                 </button>
               </div>
@@ -112,8 +182,27 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Pentagon</h5>
                 <p class="card-text text-center">Area (A) = 0.5 * p * b</p>
-                <p class="card-text text-center">p = 6cm, b = 10cm</p>
-                <button type="button" class="btn btn-primary w-100">
+                <p class="card-text text-center">
+                  <input
+                    id="pentagon-base"
+                    class="w-25"
+                    type="text"
+                    placeholder="p"
+                  />
+                  cm
+                  <input
+                    id="pentagon-height"
+                    class="w-25"
+                    type="text"
+                    placeholder="b"
+                  />
+                  cm
+                </p>
+                <button
+                  id="btn-pentagon"
+                  type="button"
+                  class="btn btn-primary w-100"
+                >
                   Calculate
                 </button>
               </div>
@@ -128,9 +217,28 @@
               />
               <div class="card-body">
                 <h5 class="card-title text-center">Ellipse</h5>
-                <p class="card-text text-center">Area (A) = 3.14 * a * b</p>
-                <p class="card-text text-center">a = 10cm, b = 4cm</p>
-                <button type="button" class="btn btn-primary w-100">
+                <p class="card-text text-center">Area (A) = &pi; * a * b</p>
+                <p class="card-text text-center">
+                  <input
+                    id="ellipse-base"
+                    class="w-25"
+                    type="text"
+                    placeholder="a"
+                  />
+                  cm
+                  <input
+                    id="ellipse-height"
+                    class="w-25"
+                    type="text"
+                    placeholder="b"
+                  />
+                  cm
+                </p>
+                <button
+                  id="btn-ellipse"
+                  type="button"
+                  class="btn btn-primary w-100"
+                >
                   Calculate
                 </button>
               </div>
@@ -143,14 +251,10 @@
               <h6 class="text-center text-decoration-underline">
                 Area Calculation
               </h6>
-              <ol>
-                <li>shejan-1</li>
-                <li>shejan-2</li>
-                <li>shejan-3</li>
-                <li>shejan-4</li>
-                <li>shejan-5</li>
-                <li>shejan-6</li>
-              </ol>
+              <ol
+                id="parent-container"
+                class="created-element-text-center"
+              ></ol>
             </div>
           </div>
         </div>
