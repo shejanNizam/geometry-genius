@@ -24,10 +24,16 @@ calculateAreaTri = () => {
   // tri calc
   const baseTriString = document.getElementById("triangle-base").value;
   const baseTri = parseInt(baseTriString);
+
   const heightTriString = document.getElementById("triangle-height").value;
   const heightTri = parseInt(heightTriString);
 
   const areaTri = 0.5 * baseTri * heightTri;
+  if (baseTri == "number" && heightTri == "number") {
+    areaTri = 0.5 * baseTri * heightTri;
+  } else {
+    alert("input a valid number");
+  }
 
   //   append child
   const container = document.getElementById("parent-container");
@@ -53,6 +59,11 @@ calculateAreaRec = () => {
   const heightRec = parseInt(heightRecString);
 
   const areaRec = baseRec * heightRec;
+  if (baseRec == "number" && heightRec == "number") {
+    areaRec = baseRec * heightRec;
+  } else {
+    alert("input a valid number");
+  }
 
   //   append child
   const container = document.getElementById("parent-container");
